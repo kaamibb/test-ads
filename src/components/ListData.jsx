@@ -130,6 +130,11 @@ const ListData = () => {
                   <th className="px-6 py-3">Price</th>
                   <th className="px-6 py-3">Author</th>
                   <th className="px-6 py-3">Action</th>
+                  <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase">
+                  <th colSpan="5" className="text-center py-3">
+                         No items available
+                    </th>
+                  </tr>
                 </tr>
               </thead>
               <tbody className="bg-white">
@@ -183,7 +188,7 @@ const ListData = () => {
             )}
           </div>
         ) : (
-          <p>No items available</p>
+          <p className="text-gray-700 mt-4">No items available</p>
         )}
         {selectedItem && (
           <DetailModal
